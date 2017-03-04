@@ -10,4 +10,6 @@
 
 @interface CCCustomProtocol : NSURLProtocol
 
+// To use This CustomProtocol , You NEED SET YOUR CC_ADS_LIST.plist or change the ads plist yourself .
+
 @end

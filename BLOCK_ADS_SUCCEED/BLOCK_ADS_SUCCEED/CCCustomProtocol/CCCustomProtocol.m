@@ -89,7 +89,8 @@ static NSArray * _arrayAds = nil;
 + (NSArray *) ccGetAdsList {
     if (!_arrayAds || !_arrayAds.count) {
         _arrayAds = nil;
-        NSString *stringAdsPath = [[NSBundle mainBundle] pathForResource:@"CC_ADS_LIST"
+#warning PLIST PATH
+        NSString *stringAdsPath = [[NSBundle bundleForClass:self] pathForResource:@"CC_ADS_LIST"
                                                                   ofType:@"plist"];
         _arrayAds = [NSMutableArray arrayWithContentsOfFile:stringAdsPath];
     }
