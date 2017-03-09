@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/VArbiter/BLOCK_ADS_DEMO.git", :tag => "#{s.version}" }
 
-s.source_files  = "BLOCK_ADS_SUCCEED", "BLOCK_ADS_SUCCEED/CCCustomProtocol/*.{h,m,plist}"
+s.source_files  = "BLOCK_ADS_DEMO", "BLOCK_ADS_SUCCEED/BLOCK_ADS_SUCCEED/CCCustomProtocol/*.{h,m,plist}"
 
   s.requires_arc = true
 
